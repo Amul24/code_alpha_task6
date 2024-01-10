@@ -1,0 +1,125 @@
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background: -webkit-linear-gradient(left, #7579ff, #b224ef); */
+    font-family: 'Nunito', sans-serif;
+    background: url(141354965-electronic-devices-icons-with-white-background-vector.jpg) center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.Home {
+    margin-left: 30px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 300px;
+    /* float: right; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.Home a {
+    text-decoration: none;
+    color: black;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 1.3em;
+    font-weight: 500;
+
+}
+
+.container {
+    border-image: url(icon-with-electronic-gadgets-vector-illustration-2AEJ66T.jpg);
+    /* background-image: ;  */
+    /* background-repeat: no-repeat;
+        background-size: contain; */
+
+    background-color: white;
+    height: 450px;
+    width: 450px;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 20px;
+    text-align: center;
+    /* display: flex;
+    align-items: center; */
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.form-signin h1 {
+    font-size: 200%;
+}
+
+label {
+    display: block;
+    width: 260px;
+    margin: 40px auto 30px auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+label span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #505f75;
+    text-transform: uppercase;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid rgba(109, 93, 93, 0.4);
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+
+    outline: none;
+    background: none;
+
+}
+
+.submit {
+    /* padding: ; */
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+    transition: 0.3s;
+}
+
+.social-media {
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.social-media ul {
+    list-style-type: none;
+}
+
+.social-media ul li {
+    /* float: ; */
+    display: inline-block;
+    cursor: pointer;
+    margin: 25px 27px;
+    margin-left: 25px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}

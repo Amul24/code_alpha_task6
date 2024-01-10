@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.search {
+    padding-top: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+
+    /* position: fixed; */
+    position: relative;
+    /* align-items: center; */
+
+}
+
+#navbar::before {
+    /* display: flex; */
+    content: "";
+    background-color: #a37cf0;
+    position: absolute;
+    /* position: fixed; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin: 0px 20px;
+}
+
+#logo img {
+    height: 100px;
+    width: 130px;
+    margin: 3px 5px;
+}
+
+#navbar ul {
+    display: flex;
+
+    /* margin-right: 15px; */
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    /* display: block; */
+    padding: 20px 22px;
+    text-decoration: none;
+    color: black;
+    font-family: Calibri;
+    font-weight: 600;
+
+    border-radius: 15px;
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+#search input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search.png');
+    background-size: 18px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.bigdiv {
+    /* background-image: ; */
+}
+
+.bigpic img {
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    float: right;
+    /* margin-bottom: 50px; */
+
+}
+
+.bigpic {
+
+    position: relative;
+    text-align: center;
+    /* color: white; */
+    /* margin-bottom: 30px; */
+    height: 300px;
+    width: 100%;
+
+}
+
+.text {
+    position: absolute;
+    /* bottom: 10px; */
+    color: white;
+    left: 50px;
+    top: 150px;
+
+    font-family: fantasy;
+    font-size: 500%;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    /* clear: left; */
+
+}
+
+.detail {
+    height: 600px;
+    width: 100%;
+    /* padding-left: 100px; */
+    padding-top: 80px;
+    /* padding-right: 100px; */
+    margin-right: 150;
+    /* background: linear-gradient(to top right, #a37cf0, white); */
+    background-color: #FFE5E5;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.AboutUs {
+    max-width: 200px;
+    max-height: 100px;
+    background-color: #a37cf0;
+    border-radius: 20%;
+    text-align: center;
+    padding: 50px;
+    font-size: 2em;
+    position: absolute;
+    margin-left: 80px;
+    /* font-variant: small-caps; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#AboutUs1 {
+    background-color: #f0a37c;
+    border-radius: 10%;
+    /* position: absolute; */
+    z-index: 9;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    margin-left: 110px;
+    float: left;
+    /* margin: 30px; */
+    margin-top: 50px;
+    width: 620px;
+    font-size: 120%;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.mypic {
+    height: 490px;
+    width: 490px;
+    float: left;
+    background-color: #a37cf0;
+    padding-left: 70px;
+    padding-top: 30px;
+    border-radius: 50%;
+    /* border-radius: 0; */
+    margin-left: 120px;
+    /* margin-bottom: 500px; */
+}
+
+.mypic img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+
+}
+
+.foot {
+    width: 100%;
+    height: 500px;
+    background-color: #212529;
+    /* padding-left: 50px; */
+    padding-top: 30px;
+    overflow: hidden;
+    /* margin-bottom: 0; */
+
+}
+
+.contact {
+    float: left;
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+    /* padding-left: 120px; */
+    margin-left: 80px;
+    line-height: 30px;
+    color: white;
+    /* border: 1px solid; */
+}
+
+.Stay {
+    float: left;
+    height: 500px;
+    width: 300px;
+    color: white;
+    margin-right: 80px;
+    margin-left: 110px;
+    padding: 30px;
+    padding-top: 30px;
+    font-size: 100%;
+    /* border: 1px solid; */
+    /* font-size: 120%; */
+    line-height: 40px;
+    /* word-spacing: 20px; */
+    /* letter-spacing: 3px; */
+    /* font-weight: bold; */
+    /* padding-left: 200px; */
+}
+
+.Stay_imag {
+    font-size: 150%;
+    margin-bottom: 25px;
+}
+
+.Message {
+    float: left;
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+    padding-top: 40px;
+    font-size: 120%;
+    word-spacing: 2px;
+    color: white;
+
+}
+
+.Message h1 {
+    font-size: larger;
+}
+
+.Message input {
+    all: unset;
+    font: 16px system-ui;
+    color: white;
+    height: 40px;
+    width: 300px;
+    padding: 6px 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 25px;
+}
+
+.Message textarea {
+    border-bottom: 2px solid white;
+    /* all: unset; */
+    background-color: transparent;
+    font: 16px system-ui;
+    color: white;
+    height: 40px;
+    /* width: 300px; */
+    padding: 6px 10px;
+}
+
+#buttonC {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 80px;
+    float: right;
+    font-size: 100%;
+    padding: 2px;
+    border-radius: 20px;
+
+
+}
+
+.Who-We-Are {
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+    /* background: linear-gradient(to bottom right, #a37cf0, white); */
+    background-color: #FFE5E5;
+    /* background: linear-gradient(#7cf0a3, #00d4ff); */
+    margin-bottom: 15px;
+}
+
+.Who-We-Are-pic {
+    height: 350px;
+    width: 400px;
+    float: left;
+    background-color: #f0a37c;
+    border-radius: 20%;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: 110px;
+
+}
+
+.Who-We-Are-pic img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    /* float: left; */
+}
+
+.Who-We-Are-block {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-left: 110px;
+}
+
+.Who-We-Are-head {
+    max-width: 200px;
+    max-height: 100px;
+    background-color: #f0a37c;
+    border-radius: 20%;
+    text-align: center;
+    padding: 50px;
+    font-size: 2em;
+    position: absolute;
+    margin-left: 315px;
+    /* font-variant: small-caps; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Who-We-Are-text {
+    background-color: #a37cf0;
+    border-radius: 10%;
+    /* position: absolute; */
+    /* z-index: 9; */
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    margin-left: 150px;
+    float: left;
+    /* margin: 30px; */
+    margin-top: 50px;
+    width: 620px;
+    font-size: 120%;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Services {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.Service1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 200px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid lightgrey;
+    text-align: center;
+    line-height: 25px;
+
+
+}
+
+.Service1 img {
+    width: 80px;
+    height: 80px;
+}

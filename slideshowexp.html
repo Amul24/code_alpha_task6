@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Slideshow</title>
+        <style>
+            .slider {
+                width: 100%;
+                height: 510px;
+                position: relative;
+            }
+
+            .slider img {
+                width: 50%;
+                height: 250px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                /* Start with all images hidden */
+                transform: translateX(-50%);
+                /* Add smooth transition effect */
+            }
+
+            .slider img.active {
+                opacity: 1;
+                /* Show the active image */
+            }
+
+            .navigation-button {
+                text-align: center;
+                position: relative;
+            }
+
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .dot.active,
+            .dot:hover {
+                background-color: #717171;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slider">
+            <img id="img-1" src="bg.jpg" alt="Image 1" class="active" />
+            <img id="img-2" src="colorful-powder-mix-splash.jpg" alt="Image 2" />
+            <img id="img-3" src="141354965-electronic-devices-icons-with-white-background-vector.jpg" alt="Image 3" />
+        </div>
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+
+        <script>
+            var imgs = document.querySelectorAll('.slider img');
+            var dots = document.querySelectorAll('.dot');
+            var currentImg = 0;
+            const interval = 5000;
+
+            function changeSlide(n) {
+                for (var i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove('active');
+                    dots[i].classList.remove('active');
+                }
+
+                currentImg = n;
+                imgs[currentImg].classList.add('active');
+                dots[currentImg].classList.add('active');
+            }
+
+            var timer = setInterval(function () {
+                currentImg = (currentImg + 1) % imgs.length;
+                changeSlide(currentImg);
+            }, interval);
+        </script>
+    </body>
+
+</html>

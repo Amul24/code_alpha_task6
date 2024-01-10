@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="SignuP.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="form1">
+                <h1>Sign Up</h1>
+
+                <label for="">Full Name</label>
+                <input type="text" placeholder="Name.." required>
+                <label for="">Email</label>
+                <div id="mailjs"></div>
+                <input type="email" id="mail" name="email" placeholder="Email address.." required>
+                <label for="">Password</label>
+                <div id="passjs"></div>
+                <input type="password" id="pass1" name="password" placeholder="•••••••••••" required>
+                <label for="">Retype Password</label>
+                <input type="password" name="password" id="pass2" placeholder="•••••••••••" required>
+
+                <input type="checkbox" required>I accept the <b>Terms & Conditions</b>
+                <div class="butt"><button class="submit" type="button" onclick="myfunc()">Sign
+                        Up</button>
+                    <button class="Home" type="button" onclick="home()">Home</button>
+                </div>
+            </div>
+            <div class="imageform"></div>
+
+
+        </div>
+        <script src="SignUp.js"></script>
+    </body>
+
+</html>

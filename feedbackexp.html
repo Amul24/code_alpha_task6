@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="feedback.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 style="text-align: center;">Feedback Form</h1>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+
+                <label for="rating">Rate our service:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select</option>
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Fair</option>
+                    <option value="1">Poor</option>
+                </select>
+
+
+                <center> <button type="submit">Submit Feedback</button>
+                </center>
+            </form>
+            <div id="thankYouMessage" style="display: none;">
+                <p>Thank you for your feedback!</p>
+                <p>We appreciate your input.</p>
+                <button onclick="resetForm()">Submit Another Feedback</button>
+            </div>
+        </div>
+
+        <script>
+            const feedbackForm = document.getElementById('feedbackForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const thankYouMessage = document.getElementById('thankYouMessage');
+
+            feedbackForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                if (nameInput.value.trim() === '' || emailInput.value.trim() === '') {
+                    alert('Name and Email are required fields');
+                } else {
+                    // Form submission was successful, hide the form and display a thank you message
+                    feedbackForm.style.display = 'none';
+                    thankYouMessage.style.display = 'block';
+                }
+            });
+
+            function resetForm() {
+                // Reset the form and show it again
+                feedbackForm.reset();
+                feedbackForm.style.display = 'block';
+                thankYouMessage.style.display = 'none';
+            }
+        </script>
+    </body>
+
+</html>
